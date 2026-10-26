@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timewise · Plan your time, live your day</title>
+  <meta name="description" content="Timewise is a free time-management website for all ages: AI schedule maker, focus timer, tasks, habits, goals and journal." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/print.css" media="print" />
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13" fill="none" stroke="currentColor" stroke-width="3"/><path d="M16 8v8l5.5 3.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      </div>
+      <span class="brand-name">Timewise</span>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-footer">
+      <button class="profile-chip" id="profileChip" type="button"></button>
+    </div>
+  </aside>
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Menu"></button>
+      <div class="topbar-title" id="topbarTitle"></div>
+      <div class="topbar-actions">
+        <div class="mini-timer hidden" id="miniTimer" title="Focus timer"></div>
+        <button class="icon-btn" id="langBtn" type="button" aria-label="Language"></button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme"></button>
+      </div>
+    </header>
+    <main class="main" id="main" tabindex="-1"></main>
+  </div>
+
+  <div class="modal-root" id="modalRoot"></div>
+  <div class="toast-root" id="toastRoot"></div>
+
+  <div id="printArea"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/sounds.js"></script>
+  <script src="js/gamify.js"></script>
+  <script src="js/pages/dashboard.js"></script>
+  <script src="js/pages/planner.js"></script>
+  <script src="js/pages/schedule.js"></script>
+  <script src="js/pages/focus.js"></script>
+  <script src="js/pages/tasks.js"></script>
+  <script src="js/pages/habits.js"></script>
+  <script src="js/pages/goals.js"></script>
+  <script src="js/pages/journal.js"></script>
+  <script src="js/pages/stats.js"></script>
+  <script src="js/pages/settings.js"></script>
+  <script src="js/pages/credits.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
