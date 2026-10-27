@@ -12,7 +12,7 @@ window.Pages = window.Pages || {};
     ['cr_pictures', 'palette', [
       ['Icons', 'All icons are drawn as inline SVG code in the style of the Lucide icon set.', 'ISC License', 'https://lucide.dev'],
       ['Timewise logo', 'Clock logo and favicon designed for this website.', 'Original', ''],
-      ['Colour palette', 'Timewise’s own navy, violet and amber palette. Some category hues are adapted from the Tailwind CSS colour system.', 'MIT License', 'https://tailwindcss.com/docs/colors'],
+      ['Colour palette', 'Timewise’s own navy and gold palette. Some category hues are adapted from the Tailwind CSS colour system.', 'MIT License', 'https://tailwindcss.com/docs/colors'],
       ['Photos & images', 'No photos or stock images are used — every picture on the site is drawn with code.', '', '']
     ]],
     ['cr_audio', 'volume', [

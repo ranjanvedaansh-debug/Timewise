@@ -145,16 +145,16 @@
   UI.CATS = [ 'study', 'work', 'exercise', 'meal', 'break', 'chores', 'hobby', 'family', 'routine', 'rest', 'sleep', 'other' ];
   UI.catColor = c => 'var(--c-' + (UI.CATS.includes(c) ? c : 'other') + ')';
   UI.catHex = {
-    study: '#5b4cdb',
+    study: '#1e40af',
     work: '#0284c7',
-    exercise: '#16a34a',
+    exercise: '#15803d',
     meal: '#78716c',
-    break: '#14b8a6',
-    chores: '#a855f7',
-    hobby: '#ec4899',
-    family: '#f97316',
+    break: '#0d9488',
+    chores: '#a16207',
+    hobby: '#e11d48',
+    family: '#ea580c',
     routine: '#64748b',
-    rest: '#6366f1',
+    rest: '#94a3b8',
     sleep: '#334155',
     other: '#94a3b8'
   };

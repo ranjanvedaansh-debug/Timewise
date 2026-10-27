@@ -3,12 +3,12 @@ body > *:not(#printArea) { display: none !important; }
 #printArea h1 { font-size: 20pt; margin-bottom: 4pt; }
 #printArea .p-sub { color: #555; margin-bottom: 14pt; font-size: 10pt; }
 #printArea .p-day { break-inside: avoid; page-break-inside: avoid; margin-bottom: 16pt; }
-#printArea h2 { font-size: 13pt; border-bottom: 2px solid #4f46e5; padding-bottom: 3pt; margin-bottom: 6pt; }
+#printArea h2 { font-size: 13pt; border-bottom: 2px solid #1e3a6e; padding-bottom: 3pt; margin-bottom: 6pt; }
 #printArea table { width: 100%; border-collapse: collapse; font-size: 10pt; }
 #printArea td { padding: 5pt 6pt; border-bottom: 1px solid #ddd; vertical-align: top; }
 #printArea td.t { width: 110pt; font-weight: 600; white-space: nowrap; }
 #printArea td.c { width: 80pt; color: #555; }
-#printArea .sw { display: inline-block; width: 8pt; height: 8pt; border-radius: 2pt; margin-right: 5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+#printArea .sw { display: inline-block; width: 8pt; height: 8pt; border-radius: 0; margin-right: 5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 #printArea .p-tips { margin-top: 10pt; font-size: 10pt; }
 #printArea .p-foot { margin-top: 16pt; font-size: 8pt; color: #888; text-align: center; }
 @page { margin: 14mm; }

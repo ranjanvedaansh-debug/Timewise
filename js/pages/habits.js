@@ -2,7 +2,7 @@ window.Pages = window.Pages || {};
 
 (function() {
   const {$: $, $$: $$, esc: esc} = UI;
-  const COLORS = [ '#4f46e5', '#0ea5e9', '#16a34a', '#f59e0b', '#ec4899', '#a855f7', '#f97316', '#14b8a6' ];
+  const COLORS = [ '#1e3a6e', '#0284c7', '#15803d', '#a16207', '#e11d48', '#475569', '#ea580c', '#0d9488' ];
   function toggle(id, date) {
     const h = Store.find('habits', id);
     if (!h) return;

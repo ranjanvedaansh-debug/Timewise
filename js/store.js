@@ -1,6 +1,6 @@
 (function() {
   const KEY = 'timewise:v1';
-  const AVATAR_COLORS = [ '#4f46e5', '#0ea5e9', '#16a34a', '#f59e0b', '#ec4899', '#a855f7', '#f97316', '#14b8a6' ];
+  const AVATAR_COLORS = [ '#1e3a6e', '#0284c7', '#15803d', '#a16207', '#e11d48', '#475569', '#ea580c', '#0d9488' ];
   function uid() {
     return Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
   }
@@ -47,6 +47,20 @@
   }
   state.settings = Object.assign(defaults().settings, state.settings || {});
   state.settings.focus = Object.assign(defaults().settings.focus, state.settings.focus || {});
+  // Swap colours saved with the old (purple) palette for the new navy palette.
+  const OLD_COLORS = {
+    '#4f46e5': '#1e3a6e', '#0ea5e9': '#0284c7', '#16a34a': '#15803d', '#f59e0b': '#a16207',
+    '#ec4899': '#e11d48', '#a855f7': '#475569', '#f97316': '#ea580c', '#14b8a6': '#0d9488'
+  };
+  function migrateColors(st) {
+    Object.values(st.profiles || {}).forEach(p => {
+      if (OLD_COLORS[p.color]) p.color = OLD_COLORS[p.color];
+      ((p.data && p.data.habits) || []).forEach(h => {
+        if (OLD_COLORS[h.color]) h.color = OLD_COLORS[h.color];
+      });
+    });
+  }
+  migrateColors(state);
   const listeners = [];
   let saveTimer = null;
   const Store = {
@@ -158,6 +172,7 @@
       if (!obj || !obj.profiles) throw new Error('Not a Timewise backup');
       state = Object.assign(defaults(), obj);
       state.settings = Object.assign(defaults().settings, obj.settings || {});
+      migrateColors(state);
       Store.save();
     },
     resetAll() {
